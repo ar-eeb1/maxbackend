@@ -3,6 +3,11 @@ import express from "express"
 import cors from "cors"
 import bodyParser from "body-parser"
 import mongoose from "mongoose"
+import cors from "cors";
+
+app.use(cors({
+  origin: "https://maxnetisp.netlify.app"
+}));
 
 dotenv.config();
 
